@@ -1,0 +1,61 @@
+\documentclass{beamer}
+
+\usetheme{metropolis}
+
+
+
+\setbeamertemplate{frame footer}{%
+	%\insertshortauthor~\hspace{0.25\textwidth}\insertshorttitle
+	\setlength\unitlength{1ex}%
+	\hspace{0.4\textwidth}
+	\begin{picture}(0,0) 
+	% \put{} defines the position of the frame
+	\put(0,-4){\makebox(0,0)[bl]{
+			\includegraphics[width=0.13\linewidth]{fig/etalab.pdf}
+	}}%
+	\end{picture}
+
+}
+
+
+
+%define color palette
+\definecolor{etalabBlue}{HTML}{127bca}
+\definecolor{etalabRed}{HTML}{ed1c24}
+% other compatible colors
+\definecolor{richBlack}{HTML}{001021}
+\definecolor{jungleGreen}{HTML}{034748}
+
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamercolor{footline}{fg=richBlack}
+\setbeamercolor{normal text}{fg=richBlack}
+
+\setbeamercolor{title separator}{fg=etalabRed}
+
+\author{Name LASTNAME}
+\date{}
+\institute{Etalab}
+\title{Presentation Title}
+
+
+\titlegraphic{%
+	\begin{picture}(0,0)
+	\put(245,-110){\makebox(0,0)[rt]{\includegraphics[width=3cm]{fig/etalab.pdf}}}
+	\put(305,-120){\makebox(0,0)[rt]{\includegraphics[width=2cm]{fig/dinsic.pdf}}}	
+	\end{picture}}
+
+\subtitle{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{frame}
+	content...
+	\end{frame}
+
+	\begin{frame}
+	content...
+	\end{frame}
+
+\end{document}
